@@ -11,11 +11,4 @@ public class BankService {
 
         return matcher.matches();
     }
-    public static boolean validatePhoneNumber(String phoneNumber) {
-        String phoneRegex = "^\\+7 \\(\\d{3}\\) \\d{3}-\\d{2}-\\d{2}$";
-        Pattern pattern = Pattern.compile(phoneRegex);
-        Matcher matcher = pattern.matcher(phoneNumber);
-
-        return matcher.matches();
-    }
 }
